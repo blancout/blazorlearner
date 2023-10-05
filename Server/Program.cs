@@ -16,7 +16,7 @@ builder.Services.AddRazorPages();
 // instrucao alternativa (erro)
 // builder.Services.AddDbContext<AspDbContext>(options => options.UseSqlServer(config.GetConnectionString("optimumDB")));
 // instrucao final ok
-builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer("DefaultConnection"));
+builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

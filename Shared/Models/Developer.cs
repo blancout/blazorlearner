@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BlazorLearner.Shared.Models
 {
     public class Developer
